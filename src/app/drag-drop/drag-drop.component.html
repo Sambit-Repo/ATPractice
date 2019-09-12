@@ -1,0 +1,24 @@
+<h2>
+    <b>
+        This Page is all about <i> Drag & Drop Module</i>
+    </b>
+</h2>
+
+<br/><br/>
+
+<div cdkDropList
+    #personList = "cdkDropList"
+    [cdkDropListData] = "personalDetails"
+    [cdkDropListConnectedTo] = "[userList]"
+    class="example-list"
+    (cdkDropListDropped) = "onDrop($event)">
+
+    <div *ngFor= "let i of personalDetails ; let i = index" class="divlayout">
+       <td> {{i.name}}</td>
+
+    </div>
+</div>
+
+<h4>Hello Bye</h4>
+
+   

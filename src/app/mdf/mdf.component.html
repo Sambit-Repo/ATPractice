@@ -1,0 +1,22 @@
+<h2>
+        <b>
+            This Page is all about <i> Model Driven Form & Form Validation</i>
+        </b>
+    </h2>
+    
+    <br/><br/>
+
+    <div>
+        <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)" >
+            <input type="email" name="emailId" placeholder="email...." formControlName="eid">
+            <br/>
+            <input type="password" name="password" placeholder="password...." formControlName="pwd">
+            <br/>
+            <input type="submit" [disabled]="!formdata.valid" value="Log In"> &nbsp;&nbsp; <input type="reset">
+        </form>
+    </div>
+
+
+    <h3>
+        The email given is : {{newemail}}
+    </h3>

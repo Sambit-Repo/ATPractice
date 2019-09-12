@@ -1,0 +1,22 @@
+<h2>
+    <b>
+        This Page is all about <i> Template Driven Form</i>
+    </b>
+</h2>
+
+<br/><br/>
+<div>
+    <form #userlogin="ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)">
+
+        <input type="email" name="emailId" placeholder="email...." ngModel>
+        <br/>
+        <input type="password" name="password" placeholder="password...." ngModel>
+        <br/>
+        <input type="submit"> &nbsp;&nbsp; <input type="reset">
+    </form>
+</div>
+
+
+<h3>
+    the emailId given is : {{email}}
+</h3>
